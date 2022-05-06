@@ -8,6 +8,7 @@ class Task extends StatelessWidget {
       body: Column(
         children: [
           Icon(Icons.list),
+          Text('Todo'),
         ],
       ),
     );
