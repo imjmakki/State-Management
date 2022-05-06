@@ -14,7 +14,9 @@ class Task extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Icon(Icons.list),
+            CircleAvatar(
+              child: Icon(Icons.list),
+            ),
             Text('Todo'),
           ],
         ),
