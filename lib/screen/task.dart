@@ -6,6 +6,7 @@ class Task extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             padding: EdgeInsets.only(
