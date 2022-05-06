@@ -1,33 +1,36 @@
 import 'package:flutter/material.dart';
-import '../widget/task_list.dart';
+import 'package:provider/provider.dart';
+import '../model/task_data.dart';
 import 'add_task.dart';
 
-class Task extends StatelessWidget {
+class TasksScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          showModalBottomSheet(
-              context: context, builder: (context) => AddTask());
-        },
-        backgroundColor: Colors.lightBlueAccent,
-        child: Icon(Icons.add),
-      ),
+          backgroundColor: Colors.lightBlueAccent,
+          child: Icon(Icons.add),
+          onPressed: () {
+            showModalBottomSheet(
+                context: context,
+                isScrollControlled: true,
+                builder: (context) => SingleChildScrollView(
+                        child: Container(
+                      padding: EdgeInsets.only(
+                          bottom: MediaQuery.of(context).viewInsets.bottom),
+                      child: AddTaskScreen(),
+                    )));
+          }),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: <Widget>[
           Container(
             padding: EdgeInsets.only(
-              top: 60.0,
-              left: 30.0,
-              right: 30.0,
-              bottom: 30.0,
-            ),
+                top: 60.0, left: 30.0, right: 30.0, bottom: 30.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: <Widget>[
                 CircleAvatar(
                   child: Icon(
                     Icons.list,
@@ -41,7 +44,7 @@ class Task extends StatelessWidget {
                   height: 10.0,
                 ),
                 Text(
-                  'Todo',
+                  'Todoey',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 50.0,
@@ -49,10 +52,10 @@ class Task extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '12 Tasks',
+                  '${Provider.of<TaskData>(context).taskCount} Tasks',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18.0,
+                    fontSize: 18,
                   ),
                 ),
               ],
@@ -60,9 +63,7 @@ class Task extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              padding: EdgeInsets.symmetric(
-                horizontal: 20.0,
-              ),
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -70,7 +71,7 @@ class Task extends StatelessWidget {
                   topRight: Radius.circular(20.0),
                 ),
               ),
-              child: TaskList(),
+              child: TasksList(),
             ),
           ),
         ],
