@@ -44,6 +44,7 @@ class Task extends StatelessWidget {
             ),
             Container(
               color: Colors.white,
+              height: 300.0,
             ),
           ],
         ),
