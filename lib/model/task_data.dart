@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'dart:collection';
 
-import '../screen/task.dart';
+import '../model/task.dart';
 
 class TaskData extends ChangeNotifier {
   List<Task> _tasks = [
