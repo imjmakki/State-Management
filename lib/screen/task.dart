@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import '../widget/task_list.dart';
 
 class Task extends StatelessWidget {
+  Widget buildBottomSheet(BuildContext context) {
+    return Container();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(context: context, builder: buildBottomSheet);
+        },
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add),
       ),
@@ -69,32 +76,6 @@ class Task extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class TaskList extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        TaskTile(),
-        TaskTile(),
-        TaskTile(),
-      ],
-    );
-  }
-}
-
-class TaskTile extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      title: Text('This is a task.'),
-      trailing: Checkbox(
-        value: false,
-        onChanged: (bool? value) {},
       ),
     );
   }
