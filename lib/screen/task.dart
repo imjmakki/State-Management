@@ -13,6 +13,7 @@ class Task extends StatelessWidget {
           bottom: 30.0,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CircleAvatar(
               child: Icon(
