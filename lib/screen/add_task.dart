@@ -20,6 +20,7 @@ class AddTask extends StatelessWidget {
           children: [
             Text(
               'Add Task',
+              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 30.0,
                 color: Colors.lightBlueAccent,
