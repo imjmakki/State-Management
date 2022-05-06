@@ -22,9 +22,11 @@ class _CheckBoxState extends State<CheckBox> {
   Widget build(BuildContext context) {
     return Checkbox(
       activeColor: Colors.lightBlueAccent,
-      value: true,
+      value: isChecked,
       onChanged: (newValue) {
-        isChecked = newValue!;
+        setState(() {
+          isChecked = newValue;
+        });
       },
     );
   }
