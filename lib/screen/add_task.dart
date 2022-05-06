@@ -8,6 +8,7 @@ class AddTask extends StatelessWidget {
     return Container(
       color: Color(0xff757575),
       child: Container(
+        padding: EdgeInsets.all(20.0),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
