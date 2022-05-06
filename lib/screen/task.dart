@@ -26,7 +26,9 @@ class Task extends StatelessWidget {
             SizedBox(
               height: 10.0,
             ),
-            Text('Todo'),
+            Text(
+              'Todo',
+            ),
           ],
         ),
       ),
