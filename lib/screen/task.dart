@@ -18,6 +18,7 @@ class Task extends StatelessWidget {
               child: Icon(
                 Icons.list,
                 size: 30.0,
+                color: Colors.lightBlueAccent,
               ),
               backgroundColor: Colors.white,
               radius: 30.0,
