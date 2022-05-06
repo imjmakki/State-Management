@@ -10,6 +10,10 @@ class AddTask extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20.0),
+            topRight: Radius.circular(20.0),
+          ),
         ),
       ),
     );
