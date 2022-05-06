@@ -24,8 +24,13 @@ class AddTask extends StatelessWidget {
                 color: Colors.lightBlueAccent,
               ),
             ),
-            TextField(),
-            FlatButton(onPressed: () {}, child: child),
+            TextField(
+              autofocus: true,
+            ),
+            FlatButton(
+              onPressed: () {},
+              child: null,
+            ),
           ],
         ),
       ),
