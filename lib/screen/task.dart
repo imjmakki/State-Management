@@ -43,8 +43,10 @@ class Task extends StatelessWidget {
               ),
             ),
             Container(
-              color: Colors.white,
               height: 300.0,
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
             ),
           ],
         ),
