@@ -13,7 +13,9 @@ class _TaskTileState extends State<TaskTile> {
     return ListTile(
       title: Text(
         'This is a task.',
-        style: TextStyle(),
+        style: TextStyle(
+          decoration: TextDecoration.lineThrough,
+        ),
       ),
       trailing: TaskCheckBox(isChecked),
     );
