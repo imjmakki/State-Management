@@ -26,6 +26,7 @@ class AddTask extends StatelessWidget {
             ),
             TextField(
               autofocus: true,
+              textAlign: TextAlign.center,
             ),
             FlatButton(
               onPressed: () {},
