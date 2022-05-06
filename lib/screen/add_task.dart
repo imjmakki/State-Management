@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class AddTask extends StatelessWidget {
@@ -30,7 +32,8 @@ class AddTask extends StatelessWidget {
             ),
             FlatButton(
               onPressed: () {},
-              child: null,
+              child: Text('Add'),
+              color: Colors.lightBlueAccent,
             ),
           ],
         ),
