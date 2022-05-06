@@ -5,6 +5,11 @@ class Task extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.lightBlueAccent,
+        child: ,
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
