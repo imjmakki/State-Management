@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import '../widget/task_list.dart';
 
 class Task extends StatelessWidget {
-  Widget buildBottomSheet(BuildContext context) {
-    return Container();
-  }
+  Widget buildBottomSheet(BuildContext context) => Container();
 
   @override
   Widget build(BuildContext context) {
