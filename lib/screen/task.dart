@@ -42,6 +42,7 @@ class Task extends StatelessWidget {
                 fontSize: 18.0,
               ),
             ),
+            Container(),
           ],
         ),
       ),
