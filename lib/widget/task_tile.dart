@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TaskTile extends StatelessWidget {
+  bool isChecked = false;
+
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -16,8 +18,6 @@ class CheckBox extends StatefulWidget {
 }
 
 class _CheckBoxState extends State<CheckBox> {
-  bool isChecked = false;
-
   @override
   Widget build(BuildContext context) {
     return Checkbox(
