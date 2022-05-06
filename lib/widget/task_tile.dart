@@ -16,12 +16,16 @@ class CheckBox extends StatefulWidget {
 }
 
 class _CheckBoxState extends State<CheckBox> {
+  bool isChecked = false;
+
   @override
   Widget build(BuildContext context) {
     return Checkbox(
       activeColor: Colors.lightBlueAccent,
       value: true,
-      onChanged: (newValue) {},
+      onChanged: (newValue) {
+        isChecked = newValue!;
+      },
     );
   }
 }
