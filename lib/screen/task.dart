@@ -37,6 +37,7 @@ class Task extends StatelessWidget {
             ),
             Text(
               '12 Tasks',
+              style: TextStyle(),
             ),
           ],
         ),
