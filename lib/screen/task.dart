@@ -3,11 +3,7 @@ import '../widget/task_list.dart';
 
 class Task extends StatelessWidget {
   Widget buildBottomSheet(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text('this is the bottomshhe'),
-      ),
-    );
+    return Container();
   }
 
   @override
