@@ -23,6 +23,7 @@ class Task extends StatelessWidget {
               backgroundColor: Colors.white,
               radius: 30.0,
             ),
+            SizedBox(),
             Text('Todo'),
           ],
         ),
