@@ -8,7 +8,9 @@ class AddTask extends StatelessWidget {
     return Container(
       color: Color(0xff757575),
       child: Container(
-        decoration: BoxDecoration(),
+        decoration: BoxDecoration(
+          color: Colors.white,
+        ),
       ),
     );
   }
