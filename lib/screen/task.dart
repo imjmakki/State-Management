@@ -16,6 +16,7 @@ class Task extends StatelessWidget {
           children: [
             CircleAvatar(
               child: Icon(Icons.list),
+              backgroundColor: Colors.white,
             ),
             Text('Todo'),
           ],
