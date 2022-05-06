@@ -79,13 +79,7 @@ class TaskList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        ListTile(
-          title: Text('This is a task.'),
-          trailing: Checkbox(
-            value: false,
-            onChanged: (bool? value) {},
-          ),
-        ),
+        TaskTile(),
         TaskTile(),
       ],
     );
