@@ -68,6 +68,14 @@ class Task extends StatelessWidget {
                     title: Text('This is a task.'),
                     trailing: Checkbox(
                       value: false,
+                      onChanged: (bool? value) {},
+                    ),
+                  ),
+                  ListTile(
+                    title: Text('This is a task.'),
+                    trailing: Checkbox(
+                      value: false,
+                      onChanged: (bool? value) {},
                     ),
                   ),
                 ],
