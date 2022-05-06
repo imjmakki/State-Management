@@ -30,6 +30,7 @@ class Task extends StatelessWidget {
               'Todo',
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 50.0,
               ),
             ),
           ],
