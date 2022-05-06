@@ -65,28 +65,35 @@ class Task extends StatelessWidget {
                   topRight: Radius.circular(20.0),
                 ),
               ),
-              child: ListView(
-                children: [
-                  ListTile(
-                    title: Text('This is a task.'),
-                    trailing: Checkbox(
-                      value: false,
-                      onChanged: (bool? value) {},
-                    ),
-                  ),
-                  ListTile(
-                    title: Text('This is a task.'),
-                    trailing: Checkbox(
-                      value: false,
-                      onChanged: (bool? value) {},
-                    ),
-                  ),
-                ],
-              ),
+              child: TaskList(),
             ),
           ),
         ],
       ),
+    );
+  }
+}
+
+class TaskList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        ListTile(
+          title: Text('This is a task.'),
+          trailing: Checkbox(
+            value: false,
+            onChanged: (bool? value) {},
+          ),
+        ),
+        ListTile(
+          title: Text('This is a task.'),
+          trailing: Checkbox(
+            value: false,
+            onChanged: (bool? value) {},
+          ),
+        ),
+      ],
     );
   }
 }
