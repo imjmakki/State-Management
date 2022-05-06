@@ -30,7 +30,12 @@ class AddTask extends StatelessWidget {
             ),
             FlatButton(
               onPressed: () {},
-              child: Text('Add'),
+              child: Text(
+                'Add',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
               color: Colors.lightBlueAccent,
             ),
           ],
